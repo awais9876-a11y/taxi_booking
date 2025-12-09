@@ -64,9 +64,11 @@ void rides(double& distance,string& location,double per_Km_charge,double& fare){
     cin>>choice;
     if(tolowercase(choice)=="yes"){
         cout<<"YOUR RIDE BOOKED SUCCESSFULLY..."<<endl;
+        cout<<"YOU RIDER WITH ID WILL REACH YOU SOON"<<endl;
     }
     else if(tolowercase(choice)=="no"){
         cout<<"YOU CANCELLED RIDE..."<<endl;
+        cout<<"TRY AGAIN"<<endl;
     }
     else{
         cout<<"INVALID INPUT..RE-ENTER..."<<endl;
@@ -134,9 +136,11 @@ void admin(string id[],string password[],int veh_number[],string name[],int& d){
   cin>>choice;
  if(choice==1){
    add_driver(id,password,veh_number,name,d);
+   cout<<"ADDED SUCCESSFULLY"<<endl;
    }
  else if(choice==2){
   remove_driver(id,password,veh_number,name,d);
+  cout<<"ADDED SUCCESSFULLY"<<endl;
    }
    else if(choice==3){
    getinfo(d);
